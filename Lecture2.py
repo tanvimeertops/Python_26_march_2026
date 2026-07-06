@@ -6,9 +6,9 @@ Hey!!
 
     # Hey!!
     # Welcome to the class
-print(type(False))
+# print(type(False))
 
-print(type(5.0))
+# print(type(5.0))
 '''
 Identifier :
 name should not start with number
@@ -30,7 +30,7 @@ Hello World (not valid)
 # b=int(a)
 # print(type(b))
 
-# a='12'
+# a='12' 
 # b=float(a)
 # print(type(b))
 # print(b)
@@ -45,7 +45,7 @@ Hello World (not valid)
 # print(type(b))
 # print(b)
 
-# a="45"
+# a=""
 # b=bool(a)
 # print(type(b))
 # print(b)
@@ -60,7 +60,28 @@ Hello World (not valid)
 # print(type(b))
 # print(b)
 
-a=-1
-b=bool(a)
-print(type(b))
-print(b)
+# a=-1
+# b=bool(a)
+# print(type(b))
+# print(b)
+
+# a=0.000001
+# b=bool(a)
+# print(type(b))
+# print(b)
+
+# a=False
+# b=int(a)
+# print(type(b))
+# print(b)
+
+
+# a=input("Enter value: ")
+# print("value is: "+a)
+
+print(12,45,67,124)
+print(23)
+
+#jonh-Doe welcome
+print("john","Doe",sep='-',end=" ")
+print("welcome")
