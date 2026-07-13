@@ -32,3 +32,5 @@ else:
         print(N,"is not a prime number")
     else:
         print(N,"is a prime number")
+
+    
