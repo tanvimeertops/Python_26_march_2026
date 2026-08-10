@@ -129,3 +129,73 @@ print("Maximum element is", max_ele)
 
 print(max(a))
 print(min(a))
+
+
+# Create a list of squares till n-1 
+# n = 5
+# 0 1 4 9 16
+square=[]
+n=5
+for i in range(n):
+    square.append(i*i)
+
+print(square)
+
+
+#even no
+#2,4,6,8,10,12
+n=20
+even_no=[i for i in range(0,n,2)]
+#0 2 4 6 8 10
+print(even_no)
+
+n=5
+new_even=[ i+i for i in range(n)] # 0+0 1+1 2+2 3+3 
+print(new_even)
+
+even_num=[ i for i in range(0,5) if i%2==0]
+#0 2 4
+print(even_num)
+
+num=[ i for i in range(1,11)]
+print(num)
+
+for i in range(1,11):
+    print(i,end=' ')
+
+# 1 odd
+# 2 even
+even_odd=["even"  if i%2==0 
+          else "odd"for i in  range(1,11)]
+print(even_odd)
+
+'''
+0,000 0000 0000 0000 0000
+'''
+row=5
+col=4
+pattern=[[0 for i in range(col)]for i in range(row)]
+print(pattern)
+
+# no=input("enter a number")
+# print(no)
+# # [ 1, 2 ,3, 4]
+# #split
+# num=no.split(" ")
+# print(num)
+
+text="Hello World python"
+text_split=text.split(" ")
+print(text_split)
+
+num="1 2 3 4"
+num_split=(num.split(" "))
+for i in range(len(num_split)):
+    num_split[i]=int(num_split[i])#num_split[0]=1
+    #num_split[1]=2
+    #num_split[2]=3
+print(num_split)
+
+#list reverse
+a = [1,2,6,4,8,' '] 
+print(a[::-1])
