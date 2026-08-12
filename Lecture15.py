@@ -199,3 +199,6 @@ print(num_split)
 #list reverse
 a = [1,2,6,4,8,' '] 
 print(a[::-1])
+
+
+
