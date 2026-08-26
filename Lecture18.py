@@ -1,49 +1,49 @@
-s=set()
-print(type(s))
+# s=set()
+# print(type(s))
 
-s = {1,2,4,2,34,5,21,1,2}
-print(s)
-
-# s[1]=3
+# s = {1,2,4,2,34,5,21,1,2}
 # print(s)
-#True=1
-#False=0
-s={0,False,(1,2),'a'}
-print(s)
-# s={3,[1,2],False}
 
-s.add(True)
-print(s)
+# # s[1]=3
+# # print(s)
+# #True=1
+# #False=0
+# s={0,False,(1,2),'a'}
+# print(s)
+# # s={3,[1,2],False}
 
-s.update(['d','e','f'])
-print(s)
+# s.add(True)
+# print(s)
 
-s.remove('a')
-print(s)
+# s.update(['d','e','f'])
+# print(s)
 
-print(len((s)))
+# s.remove('a')
+# print(s)
 
-for ele in s:
-    print(ele)
+# print(len((s)))
 
-print('e' in s)
-print('k' in s)
+# for ele in s:
+#     print(ele)
 
-food_that_you_like_to_eat = {'Pizza', 'Noodles', 'Pasta', 'Chocolates', 'Burger'} 
-food_that_are_expensive = {'Pizza', 'Croissant', 'Avocado'}
+# print('e' in s)
+# print('k' in s)
 
-print(food_that_you_like_to_eat.intersection(food_that_are_expensive))
-print(food_that_you_like_to_eat.union(food_that_are_expensive))
-print(food_that_are_expensive.difference(food_that_you_like_to_eat))
-print(food_that_you_like_to_eat-food_that_are_expensive)
+# food_that_you_like_to_eat = {'Pizza', 'Noodles', 'Pasta', 'Chocolates', 'Burger'} 
+# food_that_are_expensive = {'Pizza', 'Croissant', 'Avocado'}
 
-#remove duplicate words
-sentence = 'This is a sentence. This is not a paragraph.' 
-words=sentence.split(' ')
-print(words)
-unique_word=set(words)
-print(unique_word)
-print(len(unique_word))
+# print(food_that_you_like_to_eat.intersection(food_that_are_expensive))
+# print(food_that_you_like_to_eat.union(food_that_are_expensive))
+# print(food_that_are_expensive.difference(food_that_you_like_to_eat))
+# print(food_that_you_like_to_eat-food_that_are_expensive)
+
+# #remove duplicate words
+# sentence = 'This is a sentence. This is not a paragraph.' 
+# words=sentence.split(' ')
+# print(words)
+# unique_word=set(words)
+# print(unique_word)
+# print(len(unique_word))
 
 
 logs = { 
@@ -57,9 +57,45 @@ logs = {
     ] 
 }
 
-merged_log=[]
+# merged_log=[]
 
-for key,value in logs.items():
-    # print(key)
-    merged_log.extend(value)
-print(merged_log)
+# for key,value in logs.items():
+#     # print(key)
+#     merged_log.extend(value)
+# # print(merged_log)
+
+#sort on the timestamp
+# all_logs=sorted(merged_log,key=lambda x:x['timestamp'])
+# print(all_logs)
+
+#port in pc
+free_ports=list(range(8000,9999))
+# print(free_ports)
+used_ports=set()#8001
+
+#8001
+# if 8001 in free_ports:
+#     used_ports.add(8001)
+#     free_ports.remove(8001)
+#     print(used_ports)
+    
+# # else:
+# #     print('The port 8001 is already in used')  
+
+# #lambda
+# add = lambda x,y : x+y
+
+# print(add(1,2000))
+    
+
+def commonKey(dict1, dict2):
+  
+  cm=dict1.keys()&dict2.keys()
+  print(cm)
+  dict3={k:dict1[k]+dict2[k] for k in cm}
+  print(dict3)
+# {'c':8,'b':6}
+commonKey(
+{'a':1,'b':2,'c':3},
+{'b':4,'c':5,'d':6}
+)
