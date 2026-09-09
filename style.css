@@ -1,0 +1,43 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+.card {
+    width: 300px;
+    padding: 25px;
+    margin: 50px auto;
+    border: 2px solid #ddd;
+    background-color: white;
+    text-align: center;
+
+    position: relative;
+}
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.card h2 {
+    margin: 15px 0 5px;
+}
+
+.role {
+    margin: 5px;
+}
+
+.card button {
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+}
