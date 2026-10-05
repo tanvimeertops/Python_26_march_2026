@@ -15,3 +15,17 @@ print(driver.title)
 # driver.quit #close entire browser
 driver.close() #close the tab
 time.sleep(5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
